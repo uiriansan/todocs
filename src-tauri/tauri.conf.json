@@ -1,0 +1,43 @@
+{
+  "productName": "todocs",
+  "version": "0.0.0",
+  "identifier": "com.todocs.dev",
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../build"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "ToDocs",
+        "width": 1280,
+        "height": 720,
+        "fullscreen": false,
+        "center": true,
+        "resizable": true,
+        "decorations": false,
+        "transparent": true,
+        "minimizable": false,
+        "maximizable": false,
+        "closable": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
